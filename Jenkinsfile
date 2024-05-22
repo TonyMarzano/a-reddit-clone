@@ -15,11 +15,11 @@ pipeline {
         JENKINS_API_TOKEN = credentials("JENKINS_API_TOKEN")
     }
     stages {
-        stage('clean workspace') {
-            steps {
-                cleanWs()
-            }
-        }
+        //stage('clean workspace') {
+          //  steps {
+            //    cleanWs()
+            //}
+        //}
         stage('Checkout from Git') {
             steps {
                 git branch: 'main', url: 'https://github.com/TonyMarzano/a-reddit-clone.git'
